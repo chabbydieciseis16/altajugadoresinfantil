@@ -312,7 +312,8 @@
 
     <div class="form-group" style="margin-top: 15px;">
       <label for="foto">Fotografía del Niño (Cámara o Galería):</label>
-      <input type="file" id="foto" accept="image/*" capture="user" required onchange="mostrarPreviaFoto(event)">
+      <!-- Se retiró el atributo capture="user" para habilitar la selección desde Galería -->
+      <input type="file" id="foto" accept="image/*" required onchange="mostrarPreviaFoto(event)">
       <div id="photoPreviewContainer" class="photo-preview-container">
         <img id="imgPreview" src="" alt="Vista previa de la fotografía">
       </div>
